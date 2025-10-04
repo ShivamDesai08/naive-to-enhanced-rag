@@ -6,7 +6,7 @@
     "evaluation_method": "comprehensive_evaluation"
   },
   "performance_metrics": {
-    "f1_score": 0.0000,
+    "f1_score": 0.7692,
     "exact_match": 0.0000,
     "average_response_time": 2.3,
     "total_queries_processed": 20,

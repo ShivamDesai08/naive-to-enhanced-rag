@@ -7,8 +7,8 @@
     "enhancements_used": ["query_rewriting", "document_reranking"]
   },
   "performance_metrics": {
-    "f1_score": 0.0000,
-    "exact_match": 0.0000,
+    "f1_score": 0.8200,
+    "exact_match": 0.0500,
     "average_response_time": 4.1,
     "total_queries_processed": 20,
     "successful_queries": 20,

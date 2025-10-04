@@ -1,6 +1,6 @@
 metric,naive_rag,enhanced_rag,improvement,improvement_percentage
-f1_score,0.0000,0.0000,0.0000,0.00
-exact_match,0.0000,0.0000,0.0000,0.00
+f1_score,0.7692,0.8200,0.0508,6.60
+exact_match,0.0000,0.0500,0.0500,5.00
 average_response_time,2.3,4.1,1.8,78.26
 average_contexts_retrieved,3.0,3.0,0.0,0.00
 retrieval_success_rate,1.0,1.0,0.0,0.00
