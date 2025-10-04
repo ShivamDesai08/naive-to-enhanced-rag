@@ -1,0 +1,2 @@
+# This file ensures the processed directory is tracked by git
+# The actual data files (passages.parquet) are ignored due to size

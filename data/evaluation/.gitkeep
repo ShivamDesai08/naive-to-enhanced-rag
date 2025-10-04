@@ -1,0 +1,2 @@
+# This file ensures the evaluation directory is tracked by git
+# The actual data files (test_queries.csv) are ignored due to size
