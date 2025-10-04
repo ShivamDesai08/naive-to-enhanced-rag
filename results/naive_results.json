@@ -1,0 +1,50 @@
+{
+  "system": "naive_rag",
+  "evaluation_metadata": {
+    "timestamp": "2025-10-03T16:48:18.945287",
+    "total_queries": 20,
+    "evaluation_method": "comprehensive_evaluation"
+  },
+  "performance_metrics": {
+    "f1_score": 0.0000,
+    "exact_match": 0.0000,
+    "average_response_time": 2.3,
+    "total_queries_processed": 20,
+    "successful_queries": 20,
+    "failed_queries": 0
+  },
+  "retrieval_metrics": {
+    "average_contexts_retrieved": 3.0,
+    "average_context_length": 512,
+    "retrieval_success_rate": 1.0
+  },
+  "sample_results": [
+    {
+      "question": "What is artificial intelligence?",
+      "answer": "Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and animals.",
+      "contexts": [
+        "Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and animals.",
+        "AI research is defined as the study of intelligent agents: any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals.",
+        "The term artificial intelligence is often used to describe machines that mimic cognitive functions that humans associate with the human mind."
+      ],
+      "ground_truth": "Artificial intelligence is intelligence demonstrated by machines.",
+      "response_time": 2.1
+    },
+    {
+      "question": "Who was Albert Einstein?",
+      "answer": "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity.",
+      "contexts": [
+        "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics.",
+        "Einstein's work is also known for its influence on the philosophy of science.",
+        "He received the 1921 Nobel Prize in Physics for his explanation of the photoelectric effect."
+      ],
+      "ground_truth": "Albert Einstein was a German-born theoretical physicist.",
+      "response_time": 2.4
+    }
+  ],
+  "error_analysis": {
+    "common_errors": [],
+    "error_rate": 0.0,
+    "error_types": {}
+  }
+}

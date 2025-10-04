@@ -1,0 +1,678 @@
+{
+  "experiment_metadata": {
+    "total_time_seconds": 165.02857398986816,
+    "embedding_limit": 20,
+    "retrieval_limit": 20,
+    "prompting_limit": 15,
+    "timestamp": "2025-10-03T16:48:18.945287"
+  },
+  "experiments": {
+    "embedding_models": {
+      "all-MiniLM-L6-v2": {
+        "error": "too many values to unpack (expected 2)"
+      },
+      "all-mpnet-base-v2": {
+        "error": "too many values to unpack (expected 2)"
+      },
+      "paraphrase-MiniLM-L6-v2": {
+        "error": "too many values to unpack (expected 2)"
+      }
+    },
+    "retrieval_strategies": {
+      "top_1": {
+        "top_k": 1,
+        "evaluation_metrics": {
+          "total_queries": 20,
+          "successful_queries": 20,
+          "failed_queries": 0,
+          "exact_match": 0.0,
+          "f1": 0.0,
+          "avg_context_length": 515.6,
+          "max_context_length": 1066,
+          "min_context_length": 21,
+          "avg_num_contexts": 1.0,
+          "avg_response_length": 3.45,
+          "max_response_length": 27,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "Abraham Lincoln",
+            "contexts": [
+              "Young Abraham Lincoln"
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889."
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      },
+      "top_3": {
+        "top_k": 3,
+        "evaluation_metrics": {
+          "total_queries": 20,
+          "successful_queries": 20,
+          "failed_queries": 0,
+          "exact_match": 0.0,
+          "f1": 0.0,
+          "avg_context_length": 1059.55,
+          "max_context_length": 2131,
+          "min_context_length": 165,
+          "avg_num_contexts": 2.0,
+          "avg_response_length": 2.05,
+          "max_response_length": 15,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "",
+            "contexts": [
+              "Young Abraham Lincoln",
+              "Abraham Lincoln (February 12, 1809 \u00e2\u0080\u0093 April 15, 1865) was the sixteenth President of the United States, serving from March 4, 1861 until his assassination. As an outspoken opponent of the expansion of slavery in the United States, \"[I]n his short autobiography written for the 1860 presidential campaign, Lincoln would describe his protest in the Illinois legislature as one that 'briefly defined his position on the slavery question, and so far as it goes, it was then the same that it is now.\" This was in reference to the anti-expansion sentiments he had then expressed. Doris Kearns Goodwin, Team of Rivals: The Political Genius of Abraham Lincoln (2005) p. 91.  Holzer pg. 232.  Writing of the Cooper Union  speech, Holzer notes, \"Cooper Union proved a unique confluence of political culture, rhetorical opportunity, technological innovation, and human genius, and it brought Abraham Lincoln to the center stage of American politics at precisely the right time and place, and with precisely the right message: that slavery was wrong, and ought to be confined to the areas where it already existed, and placed on the 'course of ultimate extinction... .'\"  Lincoln won the Republican Party nomination in 1860 and was elected president later that year. During his term, he helped preserve the United States by leading the defeat of the secessionist Confederate States of America in the American Civil War. He introduced measures that resulted in the abolition of slavery, issuing his Emancipation Proclamation in 1863 and promoting the passage of the Thirteenth Amendment to the Constitution in 1865."
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              },
+              {
+                "id": 278,
+                "passage": "Abraham Lincoln (February 12, 1809 \u00e2\u0080\u0093 April 15, 1865) was the sixteenth President of the United States, serving from March 4, 1861 until his assassination. As an outspoken opponent of the expansion of slavery in the United States, \"[I]n his short autobiography written for the 1860 presidential campaign, Lincoln would describe his protest in the Illinois legislature as one that 'briefly defined his position on the slavery question, and so far as it goes, it was then the same that it is now.\" This was in reference to the anti-expansion sentiments he had then expressed. Doris Kearns Goodwin, Team of Rivals: The Political Genius of Abraham Lincoln (2005) p. 91.  Holzer pg. 232.  Writing of the Cooper Union  speech, Holzer notes, \"Cooper Union proved a unique confluence of political culture, rhetorical opportunity, technological innovation, and human genius, and it brought Abraham Lincoln to the center stage of American politics at precisely the right time and place, and with precisely the right message: that slavery was wrong, and ought to be confined to the areas where it already existed, and placed on the 'course of ultimate extinction... .'\"  Lincoln won the Republican Party nomination in 1860 and was elected president later that year. During his term, he helped preserve the United States by leading the defeat of the secessionist Confederate States of America in the American Civil War. He introduced measures that resulted in the abolition of slavery, issuing his Emancipation Proclamation in 1863 and promoting the passage of the Thirteenth Amendment to the Constitution in 1865.",
+                "score": 0.8319282531738281
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+              "* Vetoed Volstead Act in 1919. It was passed over his veto."
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              },
+              {
+                "id": 2205,
+                "passage": "* Vetoed Volstead Act in 1919. It was passed over his veto.",
+                "score": 0.9123393297195435
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+              "Alice Hathaway Lee Roosevelt (July 29, 1861 in Chestnut Hill, Massachusetts \u00e2\u0080\u0093 February 14 1884 in Manhattan, New York) was the first wife of Theodore Roosevelt and mother of their only child together, Alice Lee Roosevelt.  Alice Roosevelt died of an undiagnosed case of Bright's Disease two days after Alice Lee was born.  Theodore Roosevelt's mother Mittie died of Typhoid fever in the same house on the same day, Feb. 14, 1884.  After the simultaneous deaths of his mother and wife, Roosevelt left his daughter in the care of his sister in New York and moved out to Dakota Territory."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              },
+              {
+                "id": 2893,
+                "passage": "Alice Hathaway Lee Roosevelt (July 29, 1861 in Chestnut Hill, Massachusetts \u00e2\u0080\u0093 February 14 1884 in Manhattan, New York) was the first wife of Theodore Roosevelt and mother of their only child together, Alice Lee Roosevelt.  Alice Roosevelt died of an undiagnosed case of Bright's Disease two days after Alice Lee was born.  Theodore Roosevelt's mother Mittie died of Typhoid fever in the same house on the same day, Feb. 14, 1884.  After the simultaneous deaths of his mother and wife, Roosevelt left his daughter in the care of his sister in New York and moved out to Dakota Territory.",
+                "score": 1.080000400543213
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      },
+      "top_5": {
+        "top_k": 5,
+        "evaluation_metrics": {
+          "total_queries": 20,
+          "successful_queries": 20,
+          "failed_queries": 0,
+          "exact_match": 0.0,
+          "f1": 0.0,
+          "avg_context_length": 1494.05,
+          "max_context_length": 2724,
+          "min_context_length": 187,
+          "avg_num_contexts": 3.0,
+          "avg_response_length": 0.15,
+          "max_response_length": 2,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "",
+            "contexts": [
+              "Young Abraham Lincoln",
+              "Abraham Lincoln (February 12, 1809 \u00e2\u0080\u0093 April 15, 1865) was the sixteenth President of the United States, serving from March 4, 1861 until his assassination. As an outspoken opponent of the expansion of slavery in the United States, \"[I]n his short autobiography written for the 1860 presidential campaign, Lincoln would describe his protest in the Illinois legislature as one that 'briefly defined his position on the slavery question, and so far as it goes, it was then the same that it is now.\" This was in reference to the anti-expansion sentiments he had then expressed. Doris Kearns Goodwin, Team of Rivals: The Political Genius of Abraham Lincoln (2005) p. 91.  Holzer pg. 232.  Writing of the Cooper Union  speech, Holzer notes, \"Cooper Union proved a unique confluence of political culture, rhetorical opportunity, technological innovation, and human genius, and it brought Abraham Lincoln to the center stage of American politics at precisely the right time and place, and with precisely the right message: that slavery was wrong, and ought to be confined to the areas where it already existed, and placed on the 'course of ultimate extinction... .'\"  Lincoln won the Republican Party nomination in 1860 and was elected president later that year. During his term, he helped preserve the United States by leading the defeat of the secessionist Confederate States of America in the American Civil War. He introduced measures that resulted in the abolition of slavery, issuing his Emancipation Proclamation in 1863 and promoting the passage of the Thirteenth Amendment to the Constitution in 1865.",
+              "Sixteen months before his death, his son, John Quincy Adams, became the sixth President of the United States (1825 1829), the only son of a former President to hold the office until George W. Bush in 2001."
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              },
+              {
+                "id": 278,
+                "passage": "Abraham Lincoln (February 12, 1809 \u00e2\u0080\u0093 April 15, 1865) was the sixteenth President of the United States, serving from March 4, 1861 until his assassination. As an outspoken opponent of the expansion of slavery in the United States, \"[I]n his short autobiography written for the 1860 presidential campaign, Lincoln would describe his protest in the Illinois legislature as one that 'briefly defined his position on the slavery question, and so far as it goes, it was then the same that it is now.\" This was in reference to the anti-expansion sentiments he had then expressed. Doris Kearns Goodwin, Team of Rivals: The Political Genius of Abraham Lincoln (2005) p. 91.  Holzer pg. 232.  Writing of the Cooper Union  speech, Holzer notes, \"Cooper Union proved a unique confluence of political culture, rhetorical opportunity, technological innovation, and human genius, and it brought Abraham Lincoln to the center stage of American politics at precisely the right time and place, and with precisely the right message: that slavery was wrong, and ought to be confined to the areas where it already existed, and placed on the 'course of ultimate extinction... .'\"  Lincoln won the Republican Party nomination in 1860 and was elected president later that year. During his term, he helped preserve the United States by leading the defeat of the secessionist Confederate States of America in the American Civil War. He introduced measures that resulted in the abolition of slavery, issuing his Emancipation Proclamation in 1863 and promoting the passage of the Thirteenth Amendment to the Constitution in 1865.",
+                "score": 0.8319282531738281
+              },
+              {
+                "id": 697,
+                "passage": "Sixteen months before his death, his son, John Quincy Adams, became the sixth President of the United States (1825 1829), the only son of a former President to hold the office until George W. Bush in 2001.",
+                "score": 0.8862441182136536
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+              "* Vetoed Volstead Act in 1919. It was passed over his veto.",
+              "Lincoln met with his cabinet for the first reading of the Emancipation Proclamation draft on July 22, 1862. L-R: Edwin M. Stanton, Salmon P. Chase, Abraham Lincoln, Gideon Welles, Caleb B. Smith, William H. Seward, Montgomery Blair and Edward Bates"
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              },
+              {
+                "id": 2205,
+                "passage": "* Vetoed Volstead Act in 1919. It was passed over his veto.",
+                "score": 0.9123393297195435
+              },
+              {
+                "id": 329,
+                "passage": "Lincoln met with his cabinet for the first reading of the Emancipation Proclamation draft on July 22, 1862. L-R: Edwin M. Stanton, Salmon P. Chase, Abraham Lincoln, Gideon Welles, Caleb B. Smith, William H. Seward, Montgomery Blair and Edward Bates",
+                "score": 0.9427236318588257
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+              "Alice Hathaway Lee Roosevelt (July 29, 1861 in Chestnut Hill, Massachusetts \u00e2\u0080\u0093 February 14 1884 in Manhattan, New York) was the first wife of Theodore Roosevelt and mother of their only child together, Alice Lee Roosevelt.  Alice Roosevelt died of an undiagnosed case of Bright's Disease two days after Alice Lee was born.  Theodore Roosevelt's mother Mittie died of Typhoid fever in the same house on the same day, Feb. 14, 1884.  After the simultaneous deaths of his mother and wife, Roosevelt left his daughter in the care of his sister in New York and moved out to Dakota Territory.",
+              "He died at 11:10 p.m. on March 8, 1874, of the after-effects of a stroke.  His last words were alleged to be, upon being fed some soup, \"the nourishment is palatable.\"  On January 7 each year, a ceremony is held at his grave site in the Forest Lawn Cemetery in Buffalo."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              },
+              {
+                "id": 2893,
+                "passage": "Alice Hathaway Lee Roosevelt (July 29, 1861 in Chestnut Hill, Massachusetts \u00e2\u0080\u0093 February 14 1884 in Manhattan, New York) was the first wife of Theodore Roosevelt and mother of their only child together, Alice Lee Roosevelt.  Alice Roosevelt died of an undiagnosed case of Bright's Disease two days after Alice Lee was born.  Theodore Roosevelt's mother Mittie died of Typhoid fever in the same house on the same day, Feb. 14, 1884.  After the simultaneous deaths of his mother and wife, Roosevelt left his daughter in the care of his sister in New York and moved out to Dakota Territory.",
+                "score": 1.080000400543213
+              },
+              {
+                "id": 187,
+                "passage": "He died at 11:10 p.m. on March 8, 1874, of the after-effects of a stroke.  His last words were alleged to be, upon being fed some soup, \"the nourishment is palatable.\"  On January 7 each year, a ceremony is held at his grave site in the Forest Lawn Cemetery in Buffalo.",
+                "score": 1.1092243194580078
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      },
+      "top_10": {
+        "top_k": 10,
+        "evaluation_metrics": {
+          "total_queries": 20,
+          "successful_queries": 20,
+          "failed_queries": 0,
+          "exact_match": 0.0,
+          "f1": 0.0,
+          "avg_context_length": 2519.6,
+          "max_context_length": 4617,
+          "min_context_length": 388,
+          "avg_num_contexts": 5.05,
+          "avg_response_length": 0.0,
+          "max_response_length": 0,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "",
+            "contexts": [
+              "Young Abraham Lincoln",
+              "Abraham Lincoln (February 12, 1809 \u00e2\u0080\u0093 April 15, 1865) was the sixteenth President of the United States, serving from March 4, 1861 until his assassination. As an outspoken opponent of the expansion of slavery in the United States, \"[I]n his short autobiography written for the 1860 presidential campaign, Lincoln would describe his protest in the Illinois legislature as one that 'briefly defined his position on the slavery question, and so far as it goes, it was then the same that it is now.\" This was in reference to the anti-expansion sentiments he had then expressed. Doris Kearns Goodwin, Team of Rivals: The Political Genius of Abraham Lincoln (2005) p. 91.  Holzer pg. 232.  Writing of the Cooper Union  speech, Holzer notes, \"Cooper Union proved a unique confluence of political culture, rhetorical opportunity, technological innovation, and human genius, and it brought Abraham Lincoln to the center stage of American politics at precisely the right time and place, and with precisely the right message: that slavery was wrong, and ought to be confined to the areas where it already existed, and placed on the 'course of ultimate extinction... .'\"  Lincoln won the Republican Party nomination in 1860 and was elected president later that year. During his term, he helped preserve the United States by leading the defeat of the secessionist Confederate States of America in the American Civil War. He introduced measures that resulted in the abolition of slavery, issuing his Emancipation Proclamation in 1863 and promoting the passage of the Thirteenth Amendment to the Constitution in 1865.",
+              "Sixteen months before his death, his son, John Quincy Adams, became the sixth President of the United States (1825 1829), the only son of a former President to hold the office until George W. Bush in 2001.",
+              "* His earliest memory, from age 3, was of hearing that Abraham Lincoln had been elected and that a war was coming.",
+              "On November 6, 1860, Lincoln was elected as the 16th President of the United States, beating Democrat Stephen A. Douglas, John C. Breckinridge of the Southern Democrats, and John Bell of the new Constitutional Union Party. He was the first Republican president, winning entirely on the strength of his support in the North: he was not even on the ballot in nine states in the South, and won only 2 of 996 counties in the other Southern states. Lincoln gained 1,865,908 votes (39.9% of the total), for 180 electoral votes; Douglas, 1,380,202 (29.5%) for 12 electoral votes; Breckenridge, 848,019 (18.1%) for 72 electoral votes; and Bell, 590,901 (12.5%) for 39 electoral votes. There were fusion tickets in some states, but even if his opponents had combined in every state, Lincoln had a majority vote in all but two of the states in which he won the electoral votes and would still have won the electoral college and the election."
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              },
+              {
+                "id": 278,
+                "passage": "Abraham Lincoln (February 12, 1809 \u00e2\u0080\u0093 April 15, 1865) was the sixteenth President of the United States, serving from March 4, 1861 until his assassination. As an outspoken opponent of the expansion of slavery in the United States, \"[I]n his short autobiography written for the 1860 presidential campaign, Lincoln would describe his protest in the Illinois legislature as one that 'briefly defined his position on the slavery question, and so far as it goes, it was then the same that it is now.\" This was in reference to the anti-expansion sentiments he had then expressed. Doris Kearns Goodwin, Team of Rivals: The Political Genius of Abraham Lincoln (2005) p. 91.  Holzer pg. 232.  Writing of the Cooper Union  speech, Holzer notes, \"Cooper Union proved a unique confluence of political culture, rhetorical opportunity, technological innovation, and human genius, and it brought Abraham Lincoln to the center stage of American politics at precisely the right time and place, and with precisely the right message: that slavery was wrong, and ought to be confined to the areas where it already existed, and placed on the 'course of ultimate extinction... .'\"  Lincoln won the Republican Party nomination in 1860 and was elected president later that year. During his term, he helped preserve the United States by leading the defeat of the secessionist Confederate States of America in the American Civil War. He introduced measures that resulted in the abolition of slavery, issuing his Emancipation Proclamation in 1863 and promoting the passage of the Thirteenth Amendment to the Constitution in 1865.",
+                "score": 0.8319282531738281
+              },
+              {
+                "id": 697,
+                "passage": "Sixteen months before his death, his son, John Quincy Adams, became the sixth President of the United States (1825 1829), the only son of a former President to hold the office until George W. Bush in 2001.",
+                "score": 0.8862441182136536
+              },
+              {
+                "id": 2227,
+                "passage": "* His earliest memory, from age 3, was of hearing that Abraham Lincoln had been elected and that a war was coming.",
+                "score": 0.8866032361984253
+              },
+              {
+                "id": 319,
+                "passage": "On November 6, 1860, Lincoln was elected as the 16th President of the United States, beating Democrat Stephen A. Douglas, John C. Breckinridge of the Southern Democrats, and John Bell of the new Constitutional Union Party. He was the first Republican president, winning entirely on the strength of his support in the North: he was not even on the ballot in nine states in the South, and won only 2 of 996 counties in the other Southern states. Lincoln gained 1,865,908 votes (39.9% of the total), for 180 electoral votes; Douglas, 1,380,202 (29.5%) for 12 electoral votes; Breckenridge, 848,019 (18.1%) for 72 electoral votes; and Bell, 590,901 (12.5%) for 39 electoral votes. There were fusion tickets in some states, but even if his opponents had combined in every state, Lincoln had a majority vote in all but two of the states in which he won the electoral votes and would still have won the electoral college and the election.",
+                "score": 0.8998527526855469
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+              "* Vetoed Volstead Act in 1919. It was passed over his veto.",
+              "Lincoln met with his cabinet for the first reading of the Emancipation Proclamation draft on July 22, 1862. L-R: Edwin M. Stanton, Salmon P. Chase, Abraham Lincoln, Gideon Welles, Caleb B. Smith, William H. Seward, Montgomery Blair and Edward Bates",
+              "In July 1862, Congress moved to free the slaves by passing the Second Confiscation Act. The goal was to weaken the rebellion, which was led and controlled by slave owners. While it did not abolish the legal institution of slavery (the Thirteenth Amendment did that), the Act showed that Lincoln had the support of Congress in liberating slaves owned by rebels. This new law was implemented with Lincoln's \"Emancipation Proclamation.\"",
+              "Lincoln returned to politics in response to the Kansas-Nebraska Act (1854), which expressly repealed the limits on slavery's extent as determined by the Missouri Compromise (1820). Illinois Democrat Stephen A. Douglas, the most powerful man in the Senate, proposed popular sovereignty as the solution to the slavery impasse, and incorporated it into the Kansas-Nebraska Act. Douglas argued that in a democracy the people should have the right to decide whether or not to allow slavery in their territory, rather than have such a decision imposed on them by Congress.  Donald, (1995) ch. 7."
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              },
+              {
+                "id": 2205,
+                "passage": "* Vetoed Volstead Act in 1919. It was passed over his veto.",
+                "score": 0.9123393297195435
+              },
+              {
+                "id": 329,
+                "passage": "Lincoln met with his cabinet for the first reading of the Emancipation Proclamation draft on July 22, 1862. L-R: Edwin M. Stanton, Salmon P. Chase, Abraham Lincoln, Gideon Welles, Caleb B. Smith, William H. Seward, Montgomery Blair and Edward Bates",
+                "score": 0.9427236318588257
+              },
+              {
+                "id": 330,
+                "passage": "In July 1862, Congress moved to free the slaves by passing the Second Confiscation Act. The goal was to weaken the rebellion, which was led and controlled by slave owners. While it did not abolish the legal institution of slavery (the Thirteenth Amendment did that), the Act showed that Lincoln had the support of Congress in liberating slaves owned by rebels. This new law was implemented with Lincoln's \"Emancipation Proclamation.\"",
+                "score": 0.9562091827392578
+              },
+              {
+                "id": 308,
+                "passage": "Lincoln returned to politics in response to the Kansas-Nebraska Act (1854), which expressly repealed the limits on slavery's extent as determined by the Missouri Compromise (1820). Illinois Democrat Stephen A. Douglas, the most powerful man in the Senate, proposed popular sovereignty as the solution to the slavery impasse, and incorporated it into the Kansas-Nebraska Act. Douglas argued that in a democracy the people should have the right to decide whether or not to allow slavery in their territory, rather than have such a decision imposed on them by Congress.  Donald, (1995) ch. 7.",
+                "score": 0.9569091200828552
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+              "Alice Hathaway Lee Roosevelt (July 29, 1861 in Chestnut Hill, Massachusetts \u00e2\u0080\u0093 February 14 1884 in Manhattan, New York) was the first wife of Theodore Roosevelt and mother of their only child together, Alice Lee Roosevelt.  Alice Roosevelt died of an undiagnosed case of Bright's Disease two days after Alice Lee was born.  Theodore Roosevelt's mother Mittie died of Typhoid fever in the same house on the same day, Feb. 14, 1884.  After the simultaneous deaths of his mother and wife, Roosevelt left his daughter in the care of his sister in New York and moved out to Dakota Territory.",
+              "He died at 11:10 p.m. on March 8, 1874, of the after-effects of a stroke.  His last words were alleged to be, upon being fed some soup, \"the nourishment is palatable.\"  On January 7 each year, a ceremony is held at his grave site in the Forest Lawn Cemetery in Buffalo.",
+              "He died suddenly of a heart attack at his home in Northampton, \"The Beeches,\" at 12:45 p.m., January 5 1933. Greenberg, 154\u00e2\u0080\u0093155  Shortly before his death, Coolidge confided to an old friend: \"I feel I am no longer fit in these times.\" Sobel, 410",
+              "Biographically, two basic influences led him to his conversion: sickness and Jansenism.  From as early as his eighteenth year, Pascal suffered from a nervous ailment that left him hardly a day without pain.  In 1647, a paralytic attack so disabled him that he could not move without crutches.  His head ached, his bowels burned, his legs and feet were continually cold, and required wearisome aids to circulate the blood; he wore stockings steeped in brandy to warm his feet.  Partly to get better medical treatment, he moved to Paris with his sister Jacqueline.  His health improved, but his nervous system had been permanently damaged.  Henceforth, he was subject to deepening hypochondria, which affected his character and his philosophy.  He became irritable, subject to fits of proud and imperious anger, and seldom smiled. Sainte-Beuve, Port-Royal, I, 89."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              },
+              {
+                "id": 2893,
+                "passage": "Alice Hathaway Lee Roosevelt (July 29, 1861 in Chestnut Hill, Massachusetts \u00e2\u0080\u0093 February 14 1884 in Manhattan, New York) was the first wife of Theodore Roosevelt and mother of their only child together, Alice Lee Roosevelt.  Alice Roosevelt died of an undiagnosed case of Bright's Disease two days after Alice Lee was born.  Theodore Roosevelt's mother Mittie died of Typhoid fever in the same house on the same day, Feb. 14, 1884.  After the simultaneous deaths of his mother and wife, Roosevelt left his daughter in the care of his sister in New York and moved out to Dakota Territory.",
+                "score": 1.080000400543213
+              },
+              {
+                "id": 187,
+                "passage": "He died at 11:10 p.m. on March 8, 1874, of the after-effects of a stroke.  His last words were alleged to be, upon being fed some soup, \"the nourishment is palatable.\"  On January 7 each year, a ceremony is held at his grave site in the Forest Lawn Cemetery in Buffalo.",
+                "score": 1.1092243194580078
+              },
+              {
+                "id": 458,
+                "passage": "He died suddenly of a heart attack at his home in Northampton, \"The Beeches,\" at 12:45 p.m., January 5 1933. Greenberg, 154\u00e2\u0080\u0093155  Shortly before his death, Coolidge confided to an old friend: \"I feel I am no longer fit in these times.\" Sobel, 410",
+                "score": 1.1371726989746094
+              },
+              {
+                "id": 240,
+                "passage": "Biographically, two basic influences led him to his conversion: sickness and Jansenism.  From as early as his eighteenth year, Pascal suffered from a nervous ailment that left him hardly a day without pain.  In 1647, a paralytic attack so disabled him that he could not move without crutches.  His head ached, his bowels burned, his legs and feet were continually cold, and required wearisome aids to circulate the blood; he wore stockings steeped in brandy to warm his feet.  Partly to get better medical treatment, he moved to Paris with his sister Jacqueline.  His health improved, but his nervous system had been permanently damaged.  Henceforth, he was subject to deepening hypochondria, which affected his character and his philosophy.  He became irritable, subject to fits of proud and imperious anger, and seldom smiled. Sainte-Beuve, Port-Royal, I, 89.",
+                "score": 1.1455674171447754
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      }
+    },
+    "prompting_strategies": {
+      "instruction_prompt": {
+        "system_prompt": "You are a helpful assistant that answers questions based on the provided context. \nUse only the information from the context to answer the question. If the context doesn't contain \nenough information to answer the question, say so.",
+        "evaluation_metrics": {
+          "total_queries": 15,
+          "successful_queries": 15,
+          "failed_queries": 0,
+          "exact_match": 0.0,
+          "f1": 0.0,
+          "avg_context_length": 428.3333333333333,
+          "max_context_length": 1066,
+          "min_context_length": 21,
+          "avg_num_contexts": 1.0,
+          "avg_response_length": 4.866666666666666,
+          "max_response_length": 23,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "Did he?",
+            "contexts": [
+              "Young Abraham Lincoln"
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889."
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      },
+      "cot_prompt": {
+        "system_prompt": "You are an expert assistant. Think step by step to answer the question based on the provided context.\nStep 1: Analyze the question\nStep 2: Review the context\nStep 3: Provide your answer based on the context\nIf the context doesn't contain enough information, explain what's missing.",
+        "evaluation_metrics": {
+          "total_queries": 15,
+          "successful_queries": 15,
+          "failed_queries": 0,
+          "exact_match": 6.666666666666667,
+          "f1": 8.88888888888889,
+          "avg_context_length": 428.3333333333333,
+          "max_context_length": 1066,
+          "min_context_length": 21,
+          "avg_num_contexts": 1.0,
+          "avg_response_length": 5.0,
+          "max_response_length": 30,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "No",
+            "contexts": [
+              "Young Abraham Lincoln"
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889."
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      },
+      "persona_prompt": {
+        "system_prompt": "You are a knowledgeable historian and researcher. Answer the question based on the provided context with accuracy and detail.\nUse only the information from the context. If the context is insufficient, clearly state what information is missing.",
+        "evaluation_metrics": {
+          "total_queries": 15,
+          "successful_queries": 15,
+          "failed_queries": 0,
+          "exact_match": 6.666666666666667,
+          "f1": 6.666666666666667,
+          "avg_context_length": 428.3333333333333,
+          "max_context_length": 1066,
+          "min_context_length": 21,
+          "avg_num_contexts": 1.0,
+          "avg_response_length": 2.0,
+          "max_response_length": 15,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "Yes",
+            "contexts": [
+              "Young Abraham Lincoln"
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889."
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      },
+      "simple_prompt": {
+        "system_prompt": "Answer the question using the provided context. If you cannot answer based on the context, say so.",
+        "evaluation_metrics": {
+          "total_queries": 15,
+          "successful_queries": 15,
+          "failed_queries": 0,
+          "exact_match": 0.0,
+          "f1": 0.0,
+          "avg_context_length": 428.3333333333333,
+          "max_context_length": 1066,
+          "min_context_length": 21,
+          "avg_num_contexts": 1.0,
+          "avg_response_length": 5.6,
+          "max_response_length": 19,
+          "min_response_length": 0
+        },
+        "sample_results": [
+          {
+            "question": "Was Abraham Lincoln the sixteenth President of the United States?",
+            "answer": "no",
+            "contexts": [
+              "Young Abraham Lincoln"
+            ],
+            "search_results": [
+              {
+                "id": 288,
+                "passage": "Young Abraham Lincoln",
+                "score": 0.5809623003005981
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did Lincoln sign the National Banking Act of 1863?",
+            "answer": "",
+            "contexts": [
+              "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889."
+            ],
+            "search_results": [
+              {
+                "id": 360,
+                "passage": "Lincoln believed in the Whig theory of the presidency, which left Congress to write the laws while he signed them, vetoing only those bills that threatened his war powers. Thus, he signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural universities in each state. The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869. Other important legislation involved economic matters, including the first income tax and higher tariffs. Also included was the creation of the system of national banks by the National Banking Acts of 1863, 1864, and 1865, which allowed the creation of a strong national financial system.  Congress created and Lincoln approved the Department of Agriculture in 1862, although that institution would not become a Cabinet-level department until 1889.",
+                "score": 0.7181558012962341
+              }
+            ],
+            "ground_truth": "yes"
+          },
+          {
+            "question": "Did his mother die of pneumonia?",
+            "answer": "Nothing.",
+            "contexts": [
+              "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion."
+            ],
+            "search_results": [
+              {
+                "id": 262,
+                "passage": "An autopsy performed after his death revealed grave problems with his stomach and other organs of his abdomen, along with damage to his brain. Despite the autopsy, the cause of his continual poor health was never precisely determined, though speculation focuses on tuberculosis, stomach cancer, or a combination of the two. Muir, 103.  The headaches which afflicted Pascal are generally attributed to his brain lesion.",
+                "score": 1.0333853960037231
+              }
+            ],
+            "ground_truth": "no"
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "best_embedding_model": {
+      "model": null,
+      "f1_score": 0
+    },
+    "best_retrieval_strategy": {
+      "strategy": null,
+      "f1_score": 0
+    },
+    "best_prompting_strategy": {
+      "strategy": "cot_prompt",
+      "f1_score": 8.88888888888889
+    }
+  }
+}

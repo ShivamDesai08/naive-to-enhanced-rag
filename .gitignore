@@ -75,15 +75,15 @@ logs/
 *.temp
 *~
 
-# Results and outputs (keep structure but ignore large files)
-results/*.json
-results/*.csv
-results/*.md
+# Results and outputs (allow important results for TA review)
+# results/*.json
+# results/*.csv
+# results/*.md
 !results/.gitkeep
 
-# Data files (keep structure but ignore large files)
-data/processed/*.parquet
-data/evaluation/*.csv
+# Data files (allow sample data for TA review)
+# data/processed/*.parquet
+# data/evaluation/*.csv
 !data/processed/.gitkeep
 !data/evaluation/.gitkeep
 
